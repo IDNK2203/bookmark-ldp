@@ -1,0 +1,84 @@
+.faqs-accordion{
+  flex: 1 1 50%;
+  background-color: white;
+  position: relative;
+  margin: 2rem 0;
+  padding: 8rem 1.5rem 4rem;
+  border-radius: 15px;  
+  box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.22);
+  @include mQ_desktop{
+    box-shadow:0 0 0 ;
+    max-width: 500px;
+    padding: 4rem 1.5rem; 
+
+  }
+  &__title{
+    font-size: 2.5rem;
+    @include mQ_desktop{
+      padding: 1.5rem 0;
+      font-size: 3.5rem;
+      text-align: left;
+    } 
+  }
+  &__question{
+    cursor: pointer;
+    @include flex;
+    font-weight: 400; 
+  }
+  &__answer{
+    padding:.5rem  0 .75rem;
+    height: 0;
+    font-size: 1.05rem;
+    // color:$Dark-grayish-blue;
+    opacity:0;
+    overflow: hidden;
+    word-spacing: .25rem;
+    transition: height .5s linear , opacity .5s linear ;
+  }
+  &__item{ 
+    margin: .5rem 0;
+    padding-top: .25rem; 
+    text-align: left;
+    // border-bottom: 1px solid $Light-grayish-blue;
+  } 
+  &__question-text{
+
+    font-size: 1.1rem; 
+    // &:hover{ 
+    //   // color: $Soft-red;
+    // }
+  }
+  &__collaspe-icon{
+    padding: 0 .25rem;
+    & > *{
+      transition: transform .5s linear;
+    }
+  }
+  @include mQ_desktop{
+    &__title{
+      padding: 1.5rem 0;
+      font-size: 3.5rem;
+      text-align: left;
+    }
+    &__answer{
+      font-size: 1.3rem;
+    }
+    &__question-text{
+      font-size: 1.35rem;
+
+    }
+  }
+
+}
+.rotate_icon{
+  transform: rotate(-180deg);
+  transition: transform .5s linear;
+}
+.collaspe{ 
+  overflow: hidden;
+  opacity:1; 
+  transition: height .5s linear, opacity .5s linear;
+}
+.bold_question{
+  font-weight: 700;
+}

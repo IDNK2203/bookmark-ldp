@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;500&display=swap');
+
+// base style
+@import "./base/variables";
+
+@import "./base/mixins";
+
+@import "./base/base";
+
+// components styles
+@import "./components/accordion";
+ 
+@import "./components/nav";
+
+// @import "./components/form";
+
+@import "./components/button";
+
+// layout styles
+@import "./layout/layout";
+
+@import "./layout/header" ;
+
+// @import "./layout/footer" ;

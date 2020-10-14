@@ -1,0 +1,39 @@
+// mixins
+/// Make a context based selector a little more friendly
+/// @author Hugo Giraudel
+/// @param {String} $context
+@mixin when-inside($context) {
+  #{$context} & {
+    @content;
+  }
+}
+
+@mixin grid ($cols) {
+  display: grid;
+  grid-gap: 1.5rem;
+  grid-template-columns: repeat($cols , 1fr );
+}
+
+@mixin flex{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@mixin mQ_mobile_large{
+  @media screen and (min-width:map-get($map:$breakpoints , $key:small )) {
+    @content;
+  }
+}
+
+@mixin mQ_desktop{
+  @media screen and (min-width:map-get($map:$breakpoints , $key:medium )) {
+    @content;
+  }
+}
+
+@mixin mQ_desktop_large{
+  @media screen and (min-width:map-get($map:$breakpoints , $key:large )) {
+    @content;
+  }
+}

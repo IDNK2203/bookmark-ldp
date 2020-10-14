@@ -1,0 +1,57 @@
+.faqs{
+  // background:linear-gradient( 180deg , $Soft-violet , $Soft-blue) ;
+  height: 100%;
+  padding: 7rem 0 2rem ;
+  @include mQ_desktop{
+    height: 100vh;
+    padding: 3.5rem 2rem;
+    @include flex;
+    .container{
+      border-radius: 30px;
+      padding-right: 5rem;
+      @include flex;
+      background-color: white;
+      box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.22);
+    } 
+  }     
+}
+.faqs-illustration{
+  // background: url("../../../images/bg-pattern-mobile.svg") ;
+  background-size: contain;
+  background-repeat: no-repeat;
+  min-width: 266px;
+  background-position:1.5rem 7.5rem ;
+  @include mQ_desktop{
+    flex: 1 1 50%;
+    padding: 2rem 0;
+    // background: url("../../../images/bg-pattern-desktop.svg");
+    position: relative;
+    background-position: 0rem -5rem;
+    background-size: cover;
+    background-repeat: no-repeat;
+    }
+    @include mQ_desktop_large{
+    transform: translateX(-5rem);       
+    }
+  &--mobile { 
+    position: absolute;   
+    z-index: 1;
+    top: 1.15rem; 
+    left: 50%;
+    transform: translateX(-55%); 
+    @include mQ_desktop{
+      display: none;
+    }
+  }
+  &--desktop{
+    display: none;
+    @include mQ_desktop{
+      display: block;
+    }
+  }
+  &__box{
+    position: absolute;
+    top: 40%;
+    left: -13%;
+  }
+}
