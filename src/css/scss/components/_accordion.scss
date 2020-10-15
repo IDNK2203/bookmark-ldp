@@ -1,52 +1,72 @@
-.faqs-accordion{
-  flex: 1 1 50%;
-  background-color: white;
-  position: relative;
-  margin: 2rem 0;
-  padding: 8rem 1.5rem 4rem;
-  border-radius: 15px;  
-  box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.22);
-  @include mQ_desktop{
-    box-shadow:0 0 0 ;
-    max-width: 500px;
-    padding: 4rem 1.5rem; 
-
+.faq{
+  padding: 1rem 0 2rem ; 
+  &__heading{
+    max-width: 30rem;
+    text-align: center;
+    margin: 0 auto;
   }
-  &__title{
-    font-size: 2.5rem;
-    @include mQ_desktop{
-      padding: 1.5rem 0;
-      font-size: 3.5rem;
-      text-align: left;
-    } 
+  &__headline{
+    font-weight: 500;
+    color: $Very-Dark-Blue;
+  }
+  &__supporting-copy {
+    color: $Grayish-Blue;
+    font-size: 0.9rem;
+    line-height: 1.6;
+  }
+  .cta-holder{
+    justify-content: center;
+  }
+  @include mQ_desktop{
+    &__headline {
+      font-size: 2rem;
+      padding: 1rem 0;
+      font-weight: 500;
+    }
+    &__supporting-copy {
+      font-size: 1.05rem;
+    }
+  }
+}
+
+.faqs-accordion{
+  background-color: white;
+  margin: 2rem 0;
+  margin: 0 auto; 
+  @include mQ_desktop{
+    max-width: 600px;
   }
   &__question{
     cursor: pointer;
+    color: $Very-Dark-Blue;
     @include flex;
     font-weight: 400; 
   }
   &__answer{
-    padding:.5rem  0 .75rem;
+    padding:0rem  0 .75rem;
     height: 0;
-    font-size: 1.05rem;
-    // color:$Dark-grayish-blue;
+    font-size: .875rem;
+    color: $Grayish-Blue;
     opacity:0;
     overflow: hidden;
     word-spacing: .25rem;
     transition: height .5s linear , opacity .5s linear ;
   }
   &__item{ 
-    margin: .5rem 0;
+    margin: .25rem 0;
     padding-top: .25rem; 
     text-align: left;
-    // border-bottom: 1px solid $Light-grayish-blue;
+    border-bottom: 1px solid $Grayish-Blue;
+    &:first-child{
+      border-top: 1px solid $Grayish-Blue;
+    }
   } 
   &__question-text{
-
-    font-size: 1.1rem; 
-    // &:hover{ 
-    //   // color: $Soft-red;
-    // }
+    font-size: .9rem; 
+    padding: .75rem 0;
+    &:hover{ 
+      color: $Soft-Red;
+    }
   }
   &__collaspe-icon{
     padding: 0 .25rem;
@@ -55,17 +75,11 @@
     }
   }
   @include mQ_desktop{
-    &__title{
-      padding: 1.5rem 0;
-      font-size: 3.5rem;
-      text-align: left;
-    }
     &__answer{
-      font-size: 1.3rem;
+      font-size: 0.9rem;
     }
     &__question-text{
-      font-size: 1.35rem;
-
+      font-size: 1rem;
     }
   }
 
@@ -78,7 +92,4 @@
   overflow: hidden;
   opacity:1; 
   transition: height .5s linear, opacity .5s linear;
-}
-.bold_question{
-  font-weight: 700;
 }

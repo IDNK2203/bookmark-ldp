@@ -1,57 +1,92 @@
-.faqs{
-  // background:linear-gradient( 180deg , $Soft-violet , $Soft-blue) ;
-  height: 100%;
-  padding: 7rem 0 2rem ;
-  @include mQ_desktop{
-    height: 100vh;
-    padding: 3.5rem 2rem;
-    @include flex;
-    .container{
-      border-radius: 30px;
-      padding-right: 5rem;
-      @include flex;
-      background-color: white;
-      box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.22);
-    } 
-  }     
-}
-.faqs-illustration{
-  // background: url("../../../images/bg-pattern-mobile.svg") ;
-  background-size: contain;
-  background-repeat: no-repeat;
-  min-width: 266px;
-  background-position:1.5rem 7.5rem ;
-  @include mQ_desktop{
-    flex: 1 1 50%;
-    padding: 2rem 0;
-    // background: url("../../../images/bg-pattern-desktop.svg");
-    position: relative;
-    background-position: 0rem -5rem;
-    background-size: cover;
+// HERO SECTION
+.main {
+  margin-bottom: 4rem;
+  &__illustration {
+    // background: url("../../../images/bg-dots.svg");
+    background-size: contain;
     background-repeat: no-repeat;
-    }
-    @include mQ_desktop_large{
-    transform: translateX(-5rem);       
-    }
-  &--mobile { 
-    position: absolute;   
-    z-index: 1;
-    top: 1.15rem; 
-    left: 50%;
-    transform: translateX(-55%); 
-    @include mQ_desktop{
-      display: none;
-    }
   }
-  &--desktop{
-    display: none;
-    @include mQ_desktop{
-      display: block;
-    }
+  &__headline {
+    font-weight: 500;
+    font-size: 1.5rem;
   }
-  &__box{
-    position: absolute;
-    top: 40%;
-    left: -13%;
+  &__supporting-copy {
+    color: $Grayish-Blue;
+    font-size: 0.9rem;
+    line-height: 1.6;
+  }
+  @include mQ_desktop {
+    .container {
+      @include flex;
+      align-items: flex-start;
+      padding-bottom: 4rem;
+      flex-direction: row-reverse;
+      & > * {
+        flex: 1 1 50%;
+      }
+    }
+    &__intro-text {
+      text-align: left;
+      max-width: 28rem;
+    }
+    &__headline {
+      font-size: 2.7rem;
+      padding: 2rem 0;
+      font-weight: 500;
+    }
+    &__supporting-copy {
+      font-size: 1.05rem;
+    }
   }
 }
+.cta-holder {
+  margin: 1rem 0;
+  @include flex;
+  justify-content: center;
+  @include mQ_desktop {
+    justify-content: flex-start;
+  }
+
+  .btn {
+    padding: 1rem 0.25rem;
+    border-radius: 6px;
+    flex: 1 1 2.5rem;
+    max-width: 10rem;
+    margin: 0 0.25rem;
+    text-align: center;
+  }
+}
+
+.features{
+  &__heading{
+    max-width: 30rem;
+    text-align: center;
+    margin: 0 auto;
+  }
+  &__headline{
+    font-weight: 500;
+    color: $Very-Dark-Blue;
+  }
+  &__supporting-copy {
+    color: $Grayish-Blue;
+    font-size: 0.9rem;
+    line-height: 1.6;
+  }
+  .cta-holder{
+    justify-content: center;
+  }
+  @include mQ_desktop{
+    &__headline {
+      font-size: 2rem;
+      padding: 1rem 0;
+      font-weight: 500;
+    }
+    &__supporting-copy {
+      font-size: 1.05rem;
+    }
+    .cta-holder{
+      justify-content: flex-start;
+    }
+  }
+}
+

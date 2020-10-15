@@ -2,9 +2,9 @@
   padding: 1rem;
   text-align: center;
   width: 90%;
-  opacity: .95;
+  opacity: 0.925;
   position: absolute;
-  top:0;
+  top: 0;
   left: 0;
   width: 100%;
   height: 100%;
@@ -12,18 +12,22 @@
   justify-content: space-around;
   flex-direction: column;
   background-color: $Very-Dark-Blue;
-  // .nav__list{
-
-  // }
-  .nav__list--socials{
-    @include flex ;
+  .nav__list--socials {
+    @include flex;
     justify-content: center;
+    .nav__item{
+      font-size: 1.3rem;
+      border:none;
+    }
   }
   .nav__item {
-    padding: 0.75rem;   
+    padding: 1rem;
+    font-size: 1.15rem;
+    text-transform: uppercase;
     color: white;
     font-weight: 400;
     &:hover {
+      color: $Soft-Red;
       transform: scale(1.05);
     }
   }
@@ -39,25 +43,47 @@
     width: auto;
     position: static;
     background-color: transparent;
-    &.hidden{
-      display: flex !important;
+    &.hidden {
+      display: flex;
     }
     .nav__list {
       @include flex;
-      &--socials{
+      width: auto;
+      &--socials {
         display: none;
       }
     }
-    .nav__list--user-auth {
-      border-top: none;
+    .nav__item {
+      padding-left: 1.5rem;
+      padding-bottom: 1.25rem;
+      font-size: 1rem;
+      color: $Very-Dark-Blue;
+    }
+  }
+}
+
+.nav--primary{
+  @include  mQ_mobile_only{
+    .nav__list:first-child{
+      width: 15rem;
+      & > *:first-child{
+        border-top: 1px solid #9194a1;
+      }
+      & > *:last-child{
+        border: none;
+        padding: 0.75rem 0;
+      }
+      .btn--accent{
+        background-color: transparent;
+        padding: 0.6rem 1.75rem;
+        font-size: 1.2rem;
+        border: 2px solid white;
+        display: block;
+        font-weight: 500;
+      }
     }
     .nav__item {
-      padding-bottom: 1.25rem;
-      color:$Very-Dark-Blue;
-      // &:hover {
-      //   // color:$Dark-Violet;
-      // }
+      border-bottom: 1px solid $Grayish-Blue;
     }
-
-  }
+  }  
 }

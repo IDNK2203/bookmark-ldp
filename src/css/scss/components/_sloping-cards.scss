@@ -1,0 +1,86 @@
+
+.extension{
+  padding-top: 0;
+  .container{
+    padding-top: 0;
+    max-width: 860px; 
+    padding-left:1.5rem ;
+    padding-right:1.5rem ;
+  }
+  &__heading{
+    max-width: 30rem;
+    text-align: center;
+    margin: 0 auto;
+  }
+  &__headline{
+    font-weight: 500;
+    color: $Very-Dark-Blue;
+  }
+  &__supporting-copy {
+    color: $Grayish-Blue;
+    font-size: 0.9rem;
+    line-height: 1.6;
+  }
+  @include mQ_desktop{
+    &__headline {
+      font-size: 2rem;
+      padding: 1rem 0;
+      font-weight: 500;
+    }
+    &__supporting-copy {
+      font-size: 1.05rem;
+    }
+    .container{
+      padding:1.5rem ;
+      padding: 1.25rem 1.15rem;
+    }
+  }
+  .product{
+    padding: 1rem 0;
+    &__item{
+      // background: url(.);
+      // background-size: contain;
+      // background-repeat: no-repeat;
+      // position: relative; 
+      // background: white;
+      margin:1rem 0;
+      padding: 1rem;
+      border-radius: 8px;
+      box-shadow: 3px 3px 6px rgba($color: #000000, $alpha: .2);
+    }
+    &__image-holder{
+      padding:1rem 0;
+    }
+    &__headline{
+      max-width: 25rem;
+      margin: 1rem auto 0;
+      font-size: 1rem;
+      font-weight: 500;
+      color: $Very-Dark-Blue;
+    }
+    &__supporting-copy{
+      color: $Grayish-Blue;
+      padding: 0 0 2.5rem;
+      font-size: 0.85rem;
+      line-height: 1.6;
+    }
+  }
+  @include mQ_desktop {
+    .product{
+      height: 28.5rem;
+      @include grid (3);
+      &__item{
+        margin: 2rem 0 1rem;
+        align-self: center;
+        &:nth-of-type(1){
+          align-self: start;
+        }
+        &:nth-of-type(3){
+          align-self: end;
+        }
+      }      
+    }
+  }   
+
+}
+

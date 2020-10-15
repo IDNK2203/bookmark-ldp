@@ -1,0 +1,33 @@
+// cta banner
+.cta-banner{
+  padding: 1rem 0;
+  background:$Soft-Blue;
+  color:white; 
+
+  &__heading{
+    max-width: 30rem;
+    text-align: center;
+    margin: 0 auto;
+  }
+  &__headline{
+    font-weight: 400;
+    color: white;
+    font-size: 1.35rem;
+  }
+  &__supporting-copy {
+    color: white;
+    font-size: 0.8rem;
+    letter-spacing: .2rem;
+    line-height: 1.6;
+  }
+  @include mQ_desktop{
+    &__headline {
+      font-size: 2rem;
+      padding: 1rem 0;
+      font-weight: 500;
+    }
+    &__supporting-copy {
+      font-size: 1.05rem;
+    }
+  }
+}

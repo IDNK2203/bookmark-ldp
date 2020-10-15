@@ -26,6 +26,12 @@
   }
 }
 
+@mixin mQ_mobile_only{
+  @media screen and (max-width:map-get($map:$breakpoints , $key:medium )) {
+    @content;
+  }
+}
+
 @mixin mQ_desktop{
   @media screen and (min-width:map-get($map:$breakpoints , $key:medium )) {
     @content;

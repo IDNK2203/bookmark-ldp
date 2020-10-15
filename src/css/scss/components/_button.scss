@@ -1,23 +1,46 @@
-.btn{
+.btn {
   padding: 1rem;
   cursor: pointer;
-  border-radius:5px ; 
+  border-radius: 6px;
   color: white;
-  border:none;
-  font-size: .85rem;
-  // text-transform: uppercase;
-  font-weight: 700;
-  letter-spacing: .05rem;
+  border: none;
+  font-size: 0.75rem;
+  font-weight: 500;
+  letter-spacing: 0rem;
   font-family: inherit;
   outline: none;
-  &:hover{
-    opacity: .8;
+  box-shadow: 3px 3px 6px rgba($color: #000000, $alpha: 0.3);
+  transition: all 0.25s linear;
+}
+.btn--primary {
+  background-color: $Soft-Blue;
+  color: white;
+  border: none;
+  &:hover {
+    color: $Soft-Blue;
+    background-color: transparent;
+    border: 2px solid $Soft-Blue;
   }
 }
-// .btn--primary{
-//    background: $Cyan;
-//   //  &:hover{
-//   //   // background: lighten($Cyan , 20) ;
-//   //   }
-//   // box-shadow: 3px 3px 6px rgba($color: #000000, $alpha: .3);
-// }
+// $Grayish-Blue
+.btn--secondary {
+  background-color: lighten($color: $Grayish-Blue, $amount: 35);
+  border: none;
+  color: $Very-Dark-Blue;
+  &:hover {
+    background-color: transparent;
+    color: $Very-Dark-Blue;
+    border: 2px solid $Very-Dark-Blue;
+  }
+}
+.btn--accent {
+  background-color: $Soft-Red;
+  color: white;
+  padding: 0.6rem 1.75rem;
+  border: none;
+  &:hover {
+    color: $Soft-Red;
+    background-color: white;
+    border: 2px solid $Soft-Red;
+  }
+}
