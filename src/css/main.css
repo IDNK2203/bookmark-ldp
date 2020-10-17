@@ -39,42 +39,6 @@ p {
   margin: 0rem  auto;
 }
 
-.faq {
-  padding: 1rem 0 2rem;
-}
-
-.faq__heading {
-  max-width: 30rem;
-  text-align: center;
-  margin: 0 auto;
-}
-
-.faq__headline {
-  font-weight: 500;
-  color: #252b46;
-}
-
-.faq__supporting-copy {
-  color: #9194a1;
-  font-size: 0.9rem;
-  line-height: 1.6;
-}
-
-.faq .cta-holder {
-  justify-content: center;
-}
-
-@media screen and (min-width: 768px) {
-  .faq__headline {
-    font-size: 2rem;
-    padding: 1rem 0;
-    font-weight: 500;
-  }
-  .faq__supporting-copy {
-    font-size: 1.05rem;
-  }
-}
-
 .faqs-accordion {
   background-color: white;
   margin: 2rem 0;
@@ -258,65 +222,22 @@ p {
   }
 }
 
-.extension {
-  padding-top: 0;
-}
-
-.extension .container {
-  padding-top: 0;
-  max-width: 860px;
-  padding-left: 1.5rem;
-  padding-right: 1.5rem;
-}
-
-.extension__heading {
-  max-width: 30rem;
-  text-align: center;
-  margin: 0 auto;
-}
-
-.extension__headline {
-  font-weight: 500;
-  color: #252b46;
-}
-
-.extension__supporting-copy {
-  color: #9194a1;
-  font-size: 0.9rem;
-  line-height: 1.6;
-}
-
-@media screen and (min-width: 768px) {
-  .extension__headline {
-    font-size: 2rem;
-    padding: 1rem 0;
-    font-weight: 500;
-  }
-  .extension__supporting-copy {
-    font-size: 1.05rem;
-  }
-  .extension .container {
-    padding: 1.5rem;
-    padding: 1.25rem 1.15rem;
-  }
-}
-
-.extension .product {
+.product {
   padding: 1rem 0;
 }
 
-.extension .product__item {
+.product__item {
   margin: 1rem 0;
   padding: 1rem;
   border-radius: 8px;
   box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.2);
 }
 
-.extension .product__image-holder {
+.product__image-holder {
   padding: 1rem 0;
 }
 
-.extension .product__headline {
+.product__headline {
   max-width: 25rem;
   margin: 1rem auto 0;
   font-size: 1rem;
@@ -324,7 +245,7 @@ p {
   color: #252b46;
 }
 
-.extension .product__supporting-copy {
+.product__supporting-copy {
   color: #9194a1;
   padding: 0 0 2.5rem;
   font-size: 0.85rem;
@@ -332,20 +253,20 @@ p {
 }
 
 @media screen and (min-width: 768px) {
-  .extension .product {
+  .product {
     height: 28.5rem;
     display: grid;
     grid-gap: 1.5rem;
     grid-template-columns: repeat(3, 1fr);
   }
-  .extension .product__item {
+  .product__item {
     margin: 2rem 0 1rem;
     align-self: center;
   }
-  .extension .product__item:nth-of-type(1) {
+  .product__item:nth-of-type(1) {
     align-self: start;
   }
-  .extension .product__item:nth-of-type(3) {
+  .product__item:nth-of-type(3) {
     align-self: end;
   }
 }
@@ -481,7 +402,7 @@ p {
     justify-content: space-between;
     align-items: center;
     align-items: flex-start;
-    padding-bottom: 4rem;
+    padding: 2rem 0 2rem;
     flex-direction: row;
   }
   .tab__content-item > * {
@@ -676,10 +597,6 @@ p {
   line-height: 1.6;
 }
 
-.features .cta-holder {
-  justify-content: center;
-}
-
 @media screen and (min-width: 768px) {
   .features__headline {
     font-size: 2rem;
@@ -689,9 +606,96 @@ p {
   .features__supporting-copy {
     font-size: 1.05rem;
   }
+}
+
+.features .cta-holder {
+  justify-content: center;
+}
+
+@media screen and (min-width: 768px) {
   .features .cta-holder {
     justify-content: flex-start;
   }
+}
+
+.faq {
+  padding: 1rem 0 2rem;
+}
+
+.faq__heading {
+  max-width: 30rem;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.faq__headline {
+  font-weight: 500;
+  color: #252b46;
+}
+
+.faq__supporting-copy {
+  color: #9194a1;
+  font-size: 0.9rem;
+  line-height: 1.6;
+}
+
+@media screen and (min-width: 768px) {
+  .faq__headline {
+    font-size: 2rem;
+    padding: 1rem 0;
+    font-weight: 500;
+  }
+  .faq__supporting-copy {
+    font-size: 1.05rem;
+  }
+}
+
+.faq .cta-holder {
+  justify-content: center;
+}
+
+.extension {
+  padding-top: 0;
+}
+
+.extension .container {
+  padding-top: 0;
+  max-width: 860px;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
+.extension__heading {
+  max-width: 30rem;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.extension__headline {
+  font-weight: 500;
+  color: #252b46;
+}
+
+.extension__supporting-copy {
+  color: #9194a1;
+  font-size: 0.9rem;
+  line-height: 1.6;
+}
+
+@media screen and (min-width: 768px) {
+  .extension__headline {
+    font-size: 2rem;
+    padding: 1rem 0;
+    font-weight: 500;
+  }
+  .extension__supporting-copy {
+    font-size: 1.05rem;
+  }
+}
+
+.extension .container {
+  padding: 1.5rem;
+  padding: 1.25rem 1.15rem;
 }
 
 .header {

@@ -8,6 +8,33 @@
   }
 }
 
+@mixin section-heading {
+  &__heading{
+    max-width: 30rem;
+    text-align: center;
+    margin: 0 auto;
+  }
+  &__headline{
+    font-weight: 500;
+    color: $Very-Dark-Blue;
+  }
+  &__supporting-copy {
+    color: $Grayish-Blue;
+    font-size: 0.9rem;
+    line-height: 1.6;
+  }
+  @include mQ_desktop{
+    &__headline {
+      font-size: 2rem;
+      padding: 1rem 0;
+      font-weight: 500;
+    }
+    &__supporting-copy {
+      font-size: 1.05rem;
+    }
+  }
+}
+
 @mixin grid ($cols) {
   display: grid;
   grid-gap: 1.5rem;

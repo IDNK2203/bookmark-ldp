@@ -43,10 +43,7 @@
     &__item{ 
       margin: 0;
       padding: .25rem 1rem  0px; 
-      // text-align: center;
       border:none;
-
-      // border-bottom: 1px solid $Grayish-Blue;
       &:first-child{
         border-top: none;
       }
@@ -71,7 +68,7 @@
     &__content-item{
       @include flex;
       align-items: flex-start;
-      padding-bottom: 4rem;
+      padding: 2rem 0 2rem;
       flex-direction: row;
       & > * {
         flex: 1 1 50%;
@@ -83,8 +80,6 @@
   }
 }
 
-
-
 /* Go from zero to full opacity */
 @keyframes fadeEffect {
   from {opacity: 0;}
@@ -93,8 +88,3 @@
 .active{
   border-bottom: 3px solid red;
 }
-// .hidden{
-//   display: none;
-//   opacity:1;  
-//   transition: opacity .5s linear;
-// }

@@ -58,35 +58,35 @@
 }
 
 .features{
-  &__heading{
-    max-width: 30rem;
-    text-align: center;
-    margin: 0 auto;
-  }
-  &__headline{
-    font-weight: 500;
-    color: $Very-Dark-Blue;
-  }
-  &__supporting-copy {
-    color: $Grayish-Blue;
-    font-size: 0.9rem;
-    line-height: 1.6;
-  }
+  @include section-heading;
   .cta-holder{
     justify-content: center;
   }
   @include mQ_desktop{
-    &__headline {
-      font-size: 2rem;
-      padding: 1rem 0;
-      font-weight: 500;
-    }
-    &__supporting-copy {
-      font-size: 1.05rem;
-    }
     .cta-holder{
       justify-content: flex-start;
     }
   }
 }
 
+.faq{
+  padding: 1rem 0 2rem ; 
+  @include section-heading;
+  .cta-holder{
+    justify-content: center;
+  }
+}
+.extension{
+  padding-top: 0;
+  .container{
+    padding-top: 0;
+    max-width: 860px; 
+    padding-left:1.5rem ;
+    padding-right:1.5rem ;
+  }
+  @include section-heading;
+    .container{
+      padding:1.5rem ;
+      padding: 1.25rem 1.15rem;
+    }
+  }
