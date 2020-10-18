@@ -33,3 +33,26 @@ p{
   max-width: 1180px;
   margin: 0rem  auto;  
 }
+
+.bg-underlay{
+  position:absolute;
+  background-color: $Soft-Blue;
+  z-index:-1;
+}
+.bg-underlay--header{
+  height: 70%;
+  width: 40%;
+  bottom :0;
+  right:0;  
+  border-top-left-radius:50% ;  
+  border-bottom-left-radius: 50%;
+}
+b
+.bg-underlay--features{
+  height: 45%;
+  width: 45%;
+  bottom :0;
+  left:0;  
+  border-top-right-radius:50% ;
+  border-bottom-right-radius: 50%;
+}
