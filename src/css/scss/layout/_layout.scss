@@ -1,5 +1,6 @@
 // HERO SECTION
 .main {
+  position: relative;
   margin-bottom: 4rem;
   &__illustration {
     // background: url("../../../images/bg-dots.svg");
@@ -58,6 +59,7 @@
 }
 
 .features{
+  position: relative;
   @include section-heading;
   .cta-holder{
     justify-content: center;
