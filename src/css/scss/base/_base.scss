@@ -40,18 +40,28 @@ p{
   z-index:-1;
 }
 .bg-underlay--header{
-  height: 70%;
-  width: 40%;
-  bottom :0;
+  height: 40%;
+  width: 60%;
+  bottom: 55%;
   right:0;  
   border-top-left-radius:50% ;  
   border-bottom-left-radius: 50%;
+  @include mQ_desktop{
+    height: 70%;
+    width: 40%;
+    bottom :0;
+  }
 }
 .bg-underlay--features{
-  height: 45%;
-  width: 45%;
-  bottom :0;
+  height: 25%;
+  width: 65%;
+  bottom: 30%;
   left:0;  
   border-top-right-radius:50% ;
-  border-bottom-right-radius: 50%;
+  border-bottom-right-radius: 50%; 
+   @include mQ_desktop{
+    height: 45%;
+    width: 45%;
+    bottom :0;
+   }
 }
