@@ -106,14 +106,14 @@ tab_item.forEach((item_) => {
     item_.classList.add("active");
     tab_content_item.forEach((item) => {
       if (`tab_${item_.parentElement.dataset.tab}` == item.id) {
-        item.classList.remove("hidden");
+        item.classList.remove("hide");
       }
     });
   });
 });
 let hide_all = () => {
   tab_content_item.forEach((item) => {
-    item.classList.add("hidden");
+    item.classList.add("hide");
   });
   tab_item.forEach((item) => {
     item.classList.remove("active");

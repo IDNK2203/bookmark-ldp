@@ -19,16 +19,16 @@
 .fa-times {
   color: white;
 }
-.hidden {
-  display: none;
-  opacity: 1;
-  @include mQ_desktop {
-    display: flex;
+@include mQ_mobile_only {
+  .hidden {
+    display: none;
+    opacity: 1;
+  }
+  .lock {
+    overflow: hidden;
   }
 }
-.lock {
-  overflow: hidden;
-  @include mQ_desktop {
-    overflow: visible;
-  }
+.hide {
+  display: none;
+  opacity: 1;
 }
