@@ -58,37 +58,40 @@
   }
 }
 
-.features{
+.features {
   position: relative;
   @include section-heading;
-  .cta-holder{
+  .cta-holder {
     justify-content: center;
   }
-  @include mQ_desktop{
-    .cta-holder{
+  @include mQ_desktop {
+    .cta-holder {
       justify-content: flex-start;
     }
   }
 }
 
-.faq{
-  padding: 1rem 0 2rem ; 
+.faq {
+  padding: 1rem 0 2rem;
   @include section-heading;
-  .cta-holder{
+  .cta-holder {
     justify-content: center;
-  }
-}
-.extension{
-  padding-top: 0;
-  .container{
-    padding-top: 0;
-    max-width: 860px; 
-    padding-left:1.5rem ;
-    padding-right:1.5rem ;
-  }
-  @include section-heading;
-    .container{
-      padding:1.5rem ;
-      padding: 1.25rem 1.15rem;
+    .btn {
+      padding: 1rem;
     }
   }
+}
+.extension {
+  padding-top: 0;
+  .container {
+    padding-top: 0;
+    max-width: 860px;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+  @include section-heading;
+  .container {
+    padding: 1.5rem;
+    padding: 1.25rem 1.15rem;
+  }
+}

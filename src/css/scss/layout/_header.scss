@@ -1,25 +1,34 @@
-.header{
+.header {
   padding: 1rem 0;
-  .container{
+  .container {
     @include flex;
   }
 }
-.menu-icons{
+.menu-icons {
   cursor: pointer;
   position: absolute;
   right: 1.5rem;
-  top:2rem;
+  top: 2rem;
   font-size: 1.5rem;
-  transition: opacity .5s linear ;
+  transition: opacity 0.5s linear;
   z-index: 1;
-  @include mQ_desktop{
+  @include mQ_desktop {
     display: none;
   }
 }
-.fa-times{
-    color:white;
+.fa-times {
+  color: white;
 }
-.hidden{
+.hidden {
   display: none;
-  opacity:1;
+  opacity: 1;
+  @include mQ_desktop {
+    display: flex;
+  }
+}
+.lock {
+  overflow: hidden;
+  @include mQ_desktop {
+    overflow: visible;
+  }
 }
